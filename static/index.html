@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Custom Elements</title>
+        <script type="module" src="static/js/main.js"></script>
+        <script type="module" src="static/js/my-card.component.js"></script>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            h1, h2 {
+                font-weight: 500;
+            }
+            .cardWithColoredHeadline {
+                --myHeadlineColor: #f00;
+            }
+            my-card {
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Custom Elements</h1>
+        <div>
+            <h2>Example 1</h2>
+            <my-card class="cardWithColoredHeadline">
+                <div slot="main">The main content of the Card 1</div>
+            </my-card>
+        </div>
+        <div id="myApp">
+            <h2>Example 2</h2>
+            <my-card>
+                <div slot="main">
+                    The main content of the Card 1<br><br>
+                    <button type="button" id="clickMe">Click me</button>
+                </div>
+            </my-card>
+            <my-card>
+                <div slot="main">The main content of the Card 2</div>
+            </my-card>
+        </div>
+    </body>
+</html>

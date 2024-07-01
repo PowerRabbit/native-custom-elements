@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "ES2020",
+        "strict": true,
+        "outDir": "static/js",
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "target": "ES2020",
+        "emitDecoratorMetadata": true,
+        "moduleResolution": "node",
+        "importHelpers": false,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+    }
+}
